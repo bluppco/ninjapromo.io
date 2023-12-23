@@ -1,17 +1,28 @@
 ---
 import { endpointFetch } from "../functions/endpoint"
 
-const runtime = Astro.locals.runtime;
-const endpoint = endpointFetch( runtime.env.ENVIRONMENT )
+// const runtime = Astro.locals.runtime;
+// const endpoint = endpointFetch( runtime.env.ENVIRONMENT )
 
-// NETWORK CALL TO GET DATA
-const network_data = await fetch( endpoint + "/home" )
-const data_json = await network_data.json()
+// // NETWORK CALL TO GET DATA
+// const network_data = await fetch( endpoint + "/home" )
+// const data_json = await network_data.json()
 
 // IMPORT ASTRO COMPONENTS
 import Layout from "../layouts/Layout.astro"
 import HeaderBanner from "../components/common/HeaderBanner.astro"
+import Container from "../layouts/Container.astro";
+import Masthead from "../components/home/Masthead.astro"
 ---
 <Layout>
 	<HeaderBanner />
+	<Masthead />
+	<Container>
+		<section class="grid grid-cols-2">
+			<section class="col-span-1 gap-4 grid">
+				<h2 class="font-dm_sans text-6xl font-medium whitespace-break-spaces">Our Digital<br/>Marketing Services</h2>
+				<p>We’re experts in all things marketing. Business-to-business, cryptocurrency, NFT, and high-growth startup brands are our sweet spot. Discover how we can scale your business to new heights through our strategic services below:</p>
+			</section>
+		</section>
+	</Container>
 </Layout>
