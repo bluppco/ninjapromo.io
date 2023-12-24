@@ -12,11 +12,13 @@ import { endpointFetch } from "../functions/endpoint"
 import Layout from "../layouts/Layout.astro"
 
 import HeaderBanner from "../components/common/HeaderBanner.astro"
+import Industries from "../components/home/Industries.astro"
 import Masthead from "../components/home/Masthead.astro"
 import Services from "../components/home/Services.astro"
 ---
 <Layout title="Digital Marketing Agency | NinjaPromo">
 	<HeaderBanner />
 	<Masthead />
-	<Services services={ Array(12).fill("") } />
+	<Services services={ Array(17).fill("") } />
+	<Industries services={ Array(12).fill("") } />
 </Layout>
