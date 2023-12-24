@@ -14,11 +14,13 @@ import Layout from "../layouts/Layout.astro"
 import HeaderBanner from "../components/common/HeaderBanner.astro"
 import Industries from "../components/home/Industries.astro"
 import Masthead from "../components/home/Masthead.astro"
+import Partner from "../components/home/Partner.astro"
 import Services from "../components/home/Services.astro"
 ---
 <Layout title="Digital Marketing Agency | NinjaPromo">
 	<HeaderBanner />
 	<Masthead />
 	<Services services={ Array(17).fill("") } />
+	<Partner />
 	<Industries services={ Array(12).fill("") } />
 </Layout>

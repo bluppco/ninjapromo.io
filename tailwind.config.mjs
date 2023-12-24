@@ -8,7 +8,9 @@ export default {
 			},
 			colors: {
 				"body" : "#3C39C6",
-				"nonjapromo_black": "#212121"
+				"nonjapromo_black": "#212121",
+				"nonjapromo_accent_blue": "#181692",
+				"nonjapromo_blue": "#3C39C6",
 			}
 		},
 	},
