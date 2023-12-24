@@ -10,19 +10,19 @@ import { endpointFetch } from "../functions/endpoint"
 
 // IMPORT ASTRO COMPONENTS
 import Layout from "../layouts/Layout.astro"
+
+import Clients from "../components/home/Clients.astro"
 import HeaderBanner from "../components/common/HeaderBanner.astro"
-import Container from "../layouts/Container.astro";
+import Industries from "../components/home/Industries.astro"
 import Masthead from "../components/home/Masthead.astro"
+import Partner from "../components/home/Partner.astro"
+import Services from "../components/home/Services.astro"
 ---
-<Layout>
+<Layout title="Digital Marketing Agency | NinjaPromo">
 	<HeaderBanner />
 	<Masthead />
-	<Container>
-		<section class="grid grid-cols-2">
-			<section class="col-span-1 gap-4 grid">
-				<h2 class="font-dm_sans text-6xl font-medium whitespace-break-spaces">Our Digital<br/>Marketing Services</h2>
-				<p>We’re experts in all things marketing. Business-to-business, cryptocurrency, NFT, and high-growth startup brands are our sweet spot. Discover how we can scale your business to new heights through our strategic services below:</p>
-			</section>
-		</section>
-	</Container>
+	<Services services={ Array(17).fill("") } />
+	<Partner />
+	<Industries services={ Array(12).fill("") } />
+	<Clients clients={ Array(18).fill("") } />
 </Layout>
