@@ -12,6 +12,9 @@ import { endpointFetch } from "../functions/endpoint"
 import Layout from "../layouts/Layout.astro"
 
 import Clients from "../components/home/Clients.astro"
+import FAQ from "../components/home/FAQ.astro"
+import Footer from "../components/common/Footer.astro"
+import Header from "../components/common/Header.astro"
 import HeaderBanner from "../components/common/HeaderBanner.astro"
 import Industries from "../components/home/Industries.astro"
 import LatestPosts from "../components/home/LatestPosts.astro"
@@ -20,16 +23,17 @@ import Partner from "../components/home/Partner.astro"
 import PeopleAreSaying from "../components/home/PeopleAreSaying.astro"
 import Services from "../components/home/Services.astro"
 import TellUsAboutYou from "../components/home/TellUsAboutYou.astro"
-import Footer from "../components/common/Footer.astro"
 ---
 <Layout title="Digital Marketing Agency | NinjaPromo">
 	<HeaderBanner />
+	<Header/>
 	<Masthead />
 	<Services services={ Array(17).fill("") } />
 	<Partner />
 	<Industries services={ Array(12).fill("") } />
 	<PeopleAreSaying />
 	<Clients clients={ Array(18).fill("") } />
+	<FAQ />
 	<LatestPosts />
 	<TellUsAboutYou />
 	<Footer />
