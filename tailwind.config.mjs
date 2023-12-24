@@ -7,7 +7,8 @@ export default {
 				'dm_sans': ["DM Sans","sans-serif"]
 			},
 			colors: {
-				"body" : "#3C39C6"
+				"body" : "#3C39C6",
+				"nonjapromo_black": "#212121"
 			}
 		},
 	},
