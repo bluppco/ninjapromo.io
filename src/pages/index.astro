@@ -14,11 +14,12 @@ import Layout from "../layouts/Layout.astro"
 import Clients from "../components/home/Clients.astro"
 import HeaderBanner from "../components/common/HeaderBanner.astro"
 import Industries from "../components/home/Industries.astro"
+import LatestPosts from "../components/home/LatestPosts.astro"
 import Masthead from "../components/home/Masthead.astro"
 import Partner from "../components/home/Partner.astro"
-import Services from "../components/home/Services.astro"
 import PeopleAreSaying from "../components/home/PeopleAreSaying.astro"
-import LatestPosts from "../components/home/LatestPosts.astro"
+import Services from "../components/home/Services.astro"
+import TellUsAboutYou from "../components/home/TellUsAboutYou.astro"
 ---
 <Layout title="Digital Marketing Agency | NinjaPromo">
 	<HeaderBanner />
@@ -29,4 +30,6 @@ import LatestPosts from "../components/home/LatestPosts.astro"
 	<PeopleAreSaying />
 	<Clients clients={ Array(18).fill("") } />
 	<LatestPosts />
+	<TellUsAboutYou />
+
 </Layout>
