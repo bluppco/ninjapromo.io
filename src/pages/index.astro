@@ -11,6 +11,7 @@ import { endpointFetch } from "../functions/endpoint"
 // IMPORT ASTRO COMPONENTS
 import Layout from "../layouts/Layout.astro"
 
+import Clients from "../components/home/Clients.astro"
 import HeaderBanner from "../components/common/HeaderBanner.astro"
 import Industries from "../components/home/Industries.astro"
 import Masthead from "../components/home/Masthead.astro"
@@ -23,4 +24,5 @@ import Services from "../components/home/Services.astro"
 	<Services services={ Array(17).fill("") } />
 	<Partner />
 	<Industries services={ Array(12).fill("") } />
+	<Clients clients={ Array(18).fill("") } />
 </Layout>

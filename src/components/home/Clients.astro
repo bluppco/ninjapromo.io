@@ -1,0 +1,35 @@
+---
+const { clients } = Astro.props
+import Container from "../../layouts/Container.astro"
+---
+<section class="py-20">
+    <Container>
+        <h2 class="font-dm_sans text-6xl font-medium whitespace-break-spaces text-center">Join our growing list of happy clients:</h2>
+        <div class="grid grid-cols-6 mt-10">
+            {
+
+                clients.map( ( value, index ) => {
+
+                    let border_t = index < 6 ? "border-t-0" : ""
+                    let border_r = index%6 === 5 ? "border-r-0": ""
+                    let border_b = index > 11 ? "border-b-0" : ""
+                    let border_l = index%6 === 0 ? "border-l-0" : ""
+                    return (
+                        <div class={`flex flex-col gap-4 cursor-pointer py-8 border border-zinc-300 ${ border_r } ${ border_t } ${ border_b } ${ border_l }`}>
+                            <div class="flex gap-4 items-center justify-center h-24">
+                                <div class="w-full">
+                                    <img
+                                        src="/client-30.png"
+                                        class="w-full object-fit grayscale hover:grayscale-0"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    )
+
+                })
+
+            }
+        </div>
+    </Container>
+</section>
