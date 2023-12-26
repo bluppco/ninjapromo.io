@@ -8,9 +8,11 @@ import { endpointFetch } from "../functions/endpoint"
 // const network_data = await fetch( endpoint + "/home" )
 // const data_json = await network_data.json()
 
-// IMPORT ASTRO COMPONENTS
+// IMPORT ASTRO LAYOUTS
 import Layout from "../layouts/Layout.astro"
+import Container from "../layouts/Container.astro"
 
+// IMPORT ASTRO COMPONENTS
 import Clients from "../components/home/Clients.astro"
 import FAQ from "../components/home/FAQ.astro"
 import Footer from "../components/common/Footer.astro"
@@ -26,15 +28,17 @@ import TellUsAboutYou from "../components/home/TellUsAboutYou.astro"
 ---
 <Layout title="Digital Marketing Agency | NinjaPromo">
 	<HeaderBanner />
-	<Header/>
+	<Header />
 	<Masthead />
 	<Services services={ Array(17).fill("") } />
 	<Partner />
 	<Industries services={ Array(12).fill("") } />
 	<PeopleAreSaying />
-	<Clients clients={ Array(18).fill("") } />
-	<FAQ />
-	<LatestPosts />
+	<Container>
+		<Clients clients={ Array(18).fill("") } />
+		<FAQ />
+		<LatestPosts />
+	</Container>
 	<TellUsAboutYou />
 	<Footer />
 </Layout>
