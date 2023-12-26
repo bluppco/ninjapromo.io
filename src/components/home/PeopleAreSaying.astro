@@ -1,68 +1,85 @@
-<div class="bg-gray-800 text-white p-10">
-    <div class="text-4xl mb-6">
-        What People Are Saying
-    </div>
-    <div class="flex justify-between">
-        <div class="bg-gray-900 p-4">
-            <div class="text-xl mb-2">Digital Marketing for Private Investment Firm</div>
-            <div class="text-gray-400 text-sm">
-                In a competitive market like crypto, there is a bunch of highly skilled professionals, but not all of them have amazing people skills and work ethic. Working with the Ninja is a pleasure because they really adapt to the work dynamic of the client. Always ready for discussion and looking for the best solutions for the project even when the going gets rough. The way how they helped us meet some of the demanding deadlines was truly impressive.
+---
+// IMPORT LAYOUTS
+import Container from "../../layouts/Container.astro"
+
+// IMPORT ATOMS
+import H2 from "../../atoms/H2.astro"
+import H3 from "../../atoms/H3.astro"
+import Button from "../../atoms/Button.astro"
+
+// IMPORT COMPONENTS
+import Testimonial from "./Testimonial.astro"
+---
+<section class="bg-ninjapromo_dark_slate text-white py-20">
+    <Container>
+        <section class="space-y-20">
+            <H2>What People Are Saying</H2>
+            <div class="grid grid-cols-3 gap-16 pt-8">
+                <Testimonial
+                    title="Digital Marketing for Private Investment Firm"
+                    description="In a competitive market like crypto, there is a bunch of highly skilled professionals, but not all of them have amazing people skills and work ethic. Working with the Ninjas is a pleasure because they really adapt to the work dynamic of the client. Always ready for discussion and looking for the best solutions for the project even when the going gets rough. The way how they helped us meet some of the demanding deadlines was truly impressive."
+                    author_name="Jacob Kappus"
+                    author_designation="CMO Ultron Foundation"
+                    src=""
+                    alt=""
+                    logo_src=""
+                    logo_alt=""
+                />
+                <Testimonial
+                    title="Digital Marketing for Private Investment Firm"
+                    description="In a competitive market like crypto, there is a bunch of highly skilled professionals, but not all of them have amazing people skills and work ethic. Working with the Ninjas is a pleasure because they really adapt to the work dynamic of the client. Always ready for discussion and looking for the best solutions for the project even when the going gets rough. The way how they helped us meet some of the demanding deadlines was truly impressive."
+                    author_name="Jacob Kappus"
+                    author_designation="CMO Ultron Foundation"
+                    src=""
+                    alt=""
+                    logo_src=""
+                    logo_alt=""
+                />
+                <Testimonial
+                    title="Digital Marketing for Private Investment Firm"
+                    description="In a competitive market like crypto, there is a bunch of highly skilled professionals, but not all of them have amazing people skills and work ethic. Working with the Ninjas is a pleasure because they really adapt to the work dynamic of the client. Always ready for discussion and looking for the best solutions for the project even when the going gets rough. The way how they helped us meet some of the demanding deadlines was truly impressive."
+                    author_name="Jacob Kappus"
+                    author_designation="CMO Ultron Foundation"
+                    src=""
+                    alt=""
+                    logo_src=""
+                    logo_alt=""
+                />
             </div>
-            <div class="mt-4 text-gray-500">
-                Jacob Kappus<br>
-                CMO Ultron Foundation
+            <div class="flex items-center justify-between">
+                <Button>See Case Studies</Button>
+                <div class="flex justify-center">
+                    <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-l">
+                        &lt;
+                    </button>
+                    <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-r">
+                        &gt;
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="bg-gray-900 p-4">
-            <div class="text-xl mb-2">Digital Marketing for Software Development Company</div>
-            <div class="text-gray-400 text-sm">
-                A data-driven partner, NinjaPromo has taken the time to examine the client's branding, messaging, and positioning to develop strategies and content that match and provide valuable insights to further help them grow their business. They remain communicative, organized, and reliable.
+            <H3>Our Partners are Backed by the Best in Venture</H3>
+            <div class="flex justify-center gap-10">
+                <div>
+                    <img src="path-to-polygon-logo.svg" alt="Polygon logo" class="h-6">
+                </div>
+                <div>
+                    <img src="path-to-techstars-logo.svg" alt="Techstars logo" class="h-6">
+                </div>
+                <div>
+                    <img src="path-to-105-ventures-logo.svg" alt="105 Ventures logo" class="h-6">
+                </div>
+                <div>
+                    <img src="path-to-signum-capital-logo.svg" alt="Signum Capital logo" class="h-6">
+                </div>
+                <div>
+                    <img src="path-to-ycombinator-logo.svg" alt="Y Combinator logo" class="h-6">
+                </div>
             </div>
-            <div class="mt-4 text-gray-500">
-                Yury Rasolko<br>
-                Chief Marketing Officer
-            </div>
-        </div>
-        <div class="bg-gray-900 p-4">
-            <div class="text-xl mb-2">Digital Marketing for DeFi Educational Portal</div>
-            <div class="text-gray-400 text-sm">
-                NinjaPromo's work has improved brand messaging and helped increase sales by 210%. They've displayed top-notch project management and outstanding customer service — they go above and beyond to ensure the project's success. Overall, they are flexible, accommodating, and proactive.
-            </div>
-            <div class="mt-4 text-gray-500">
-                Charles Ellingsen<br>
-                CEO & Founder
-            </div>
-        </div>
-    </div>
-    <div class="text-center mt-10">
-        <a href="#" class="text-blue-400 underline">See Case Studies</a>
-    </div>
-    <div class="text-2xl text-center mt-10 mb-4">
-        Our Partners are Backed by the Best in Venture
-    </div>
-    <div class="flex justify-center space-x-4">
-        <div>
-            <img src="path-to-polygon-logo.svg" alt="Polygon logo" class="h-6">
-        </div>
-        <div>
-            <img src="path-to-techstars-logo.svg" alt="Techstars logo" class="h-6">
-        </div>
-        <div>
-            <img src="path-to-105-ventures-logo.svg" alt="105 Ventures logo" class="h-6">
-        </div>
-        <div>
-            <img src="path-to-signum-capital-logo.svg" alt="Signum Capital logo" class="h-6">
-        </div>
-        <div>
-            <img src="path-to-ycombinator-logo.svg" alt="Y Combinator logo" class="h-6">
-        </div>
-    </div>
-    <div class="flex justify-center mt-6">
-        <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-l">
-            &lt;
-        </button>
-        <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-r">
-            &gt;
-        </button>
-    </div>
-</div>
+            <section class="flex flex-col gap-8 items-center bg-partner bg-no-repeat bg-center pt-40">
+                <h2 class="text-white font-dm_sans text-5xl font-medium text-center">Partner With a Digital Marketing Agency That Delivers Growth</h2>
+                <p class="text-center text-white font-dm_sans">We’re a full-service digital marketing agency that helps brands that want to get noticed and dominate their industry. We love marketing. We eat, sleep and breathe it. But more importantly, we love seeing our clients grow their businesses with our help. There’s nothing more satisfying than playing a pivotal role in the success of another business. Whether you’re a fresh-faced startup or a seasoned enterprise, we want to be the one that helps you chart a course to explosive growth. If this sounds good to you, then let’s talk.</p>
+                <Button>Speak to our team</Button>
+            </section>
+        </section>
+    </Container>
+</section>

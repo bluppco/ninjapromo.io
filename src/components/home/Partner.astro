@@ -1,15 +1,18 @@
 ---
-import Container from "../../layouts/Container.astro";
+// IMPORT LAYOUTS
+import Container from "../../layouts/Container.astro"
 
+// IMPORT ATOMS
+import Button from "../../atoms/Button.astro"
+import H2 from "../../atoms/H2.astro"
 ---
-
-<section class="bg-nonjapromo_black py-36">
+<section class="bg-ninjapromo_dark_slate py-36">
     <Container>
         <!-- // BG TO BE FIXED -->
-        <div class="flex flex-col gap-6 items-center bg-partner bg-no-repeat bg-center">
-            <h2 class="text-white font-dm_sans text-5xl font-bold text-center">Partner With a Digital Marketing Agency That Delivers Growth</h2>
+        <div class="flex flex-col gap-8 items-center bg-partner bg-no-repeat bg-center">
+            <h2 class="text-white font-dm_sans text-5xl font-medium text-center">Partner With a Digital Marketing Agency That Delivers Growth</h2>
             <p class="text-center text-white font-dm_sans">We’re a full-service digital marketing agency that helps brands that want to get noticed and dominate their industry. We love marketing. We eat, sleep and breathe it. But more importantly, we love seeing our clients grow their businesses with our help. There’s nothing more satisfying than playing a pivotal role in the success of another business. Whether you’re a fresh-faced startup or a seasoned enterprise, we want to be the one that helps you chart a course to explosive growth. If this sounds good to you, then let’s talk.</p>
-            <button class="font-dm_sans text-white bg-nonjapromo_blue py-4 px-12 hover:bg-nonjapromo_accent_blue">Speak to our team</button>
+            <Button>Speak to our team</Button>
         </div>
     </Container>
 </section>

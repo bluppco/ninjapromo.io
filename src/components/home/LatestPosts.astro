@@ -1,47 +1,51 @@
-<div class="bg-purple-900 text-white p-8">
-    <h2 class="text-4xl font-bold mb-10">What's the latest?</h2>
+---
+// IMPORT ATOMS
+import H2 from "../../atoms/H2.astro"
+
+// IMPORT COMPONENTS
+import Blog from "./Blog.astro"
+---
+<section class="space-y-10">
+    <H2>What's the latest?</H2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Article 1 -->
-        <div class="bg-purple-800 p-6 rounded-lg">
-            <img src="path-to-article-image-1.jpg" alt="Top 9 Google Ads Agencies" class="rounded-lg mb-4">
-            <div class="text-purple-300 text-xs uppercase mb-2">December 19, 2023 • 12 mins read</div>
-            <h3 class="text-xl font-semibold mb-2">Top 9 Google Ads Agencies for 2024</h3>
-            <p class="text-purple-300 text-sm">List of the Top 9 Google Advertising Agencies</p>
-        </div>
-        <!-- Article 2 -->
-        <div class="bg-purple-800 p-6 rounded-lg">
-            <img src="path-to-article-image-2.jpg" alt="10 Best Digital Marketing Agencies in Sydney" class="rounded-lg mb-4">
-            <div class="text-purple-300 text-xs uppercase mb-2">December 18, 2023 • 12 mins read</div>
-            <h3 class="text-xl font-semibold mb-2">10 Best Digital Marketing Agencies in Sydney 2024</h3>
-            <p class="text-purple-300 text-sm">List of the Top 10 Digital Marketing Companies in Sydney</p>
-        </div>
-        <!-- Article 3 -->
-        <div class="bg-purple-800 p-6 rounded-lg">
-            <img src="path-to-article-image-3.jpg" alt="5 Best B2B Technology Marketing Agencies" class="rounded-lg mb-4">
-            <div class="text-purple-300 text-xs uppercase mb-2">December 15, 2023 • 8 mins read</div>
-            <h3 class="text-xl font-semibold mb-2">5 Best B2B Technology Marketing Agencies in 2024</h3>
-            <p class="text-purple-300 text-sm">List of the Top 5 B2B Technology Marketing Companies</p>
-        </div>
+        <Blog
+            date="December 19, 2023"
+            duration="12 mins read"
+            title="Top 9 Google Ads Agencies for 2024"
+            description="List of the Top 9 Google Advertising Agencies"
+        />
+        <Blog
+            date="December 19, 2023"
+            duration="12 mins read"
+            title="Top 9 Google Ads Agencies for 2024"
+            description="List of the Top 9 Google Advertising Agencies"
+        />
+        <Blog
+            date="December 19, 2023"
+            duration="12 mins read"
+            title="Top 9 Google Ads Agencies for 2024"
+            description="List of the Top 9 Google Advertising Agencies"
+        />
+        <Blog
+            date="December 19, 2023"
+            duration="12 mins read"
+            title="Top 9 Google Ads Agencies for 2024"
+            description="List of the Top 9 Google Advertising Agencies"
+        />
+        <Blog
+            date="December 19, 2023"
+            duration="12 mins read"
+            title="Top 9 Google Ads Agencies for 2024"
+            description="List of the Top 9 Google Advertising Agencies"
+        />
+        <Blog
+            date="December 19, 2023"
+            duration="12 mins read"
+            title="Top 9 Google Ads Agencies for 2024"
+            description="List of the Top 9 Google Advertising Agencies"
+        />
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-        <!-- Article 4 -->
-        <div class="bg-purple-800 p-6 rounded-lg">
-            <img src="path-to-article-image-4.jpg" alt="The Complete Guide to Product Marketing Strategy" class="rounded-lg mb-4">
-            <div class="text-purple-300 text-xs uppercase mb-2">December 14, 2023 • 18 mins read</div>
-            <h3 class="text-xl font-semibold mb-2">The Complete Guide to Product Marketing Strategy for 2024</h3>
-            <p class="text-purple-300 text-sm">The Complete Guide to Product Marketing Strategy in 2024</p>
-        </div>
-        <!-- Article 5 -->
-        <div class="bg-purple-800 p-6 rounded-lg">
-            <img src="path-to-article-image-5.jpg" alt="10 Best Growth Marketing Agencies for 2024" class="rounded-lg mb-4">
-            <div class="text-purple-300 text-xs uppercase mb-2">December 13, 2023 • 13 mins read</div>
-            <h3 class="text-xl font-semibold mb-2">10 Best Growth Marketing Agencies for 2024</h3>
-            <p class="text-purple-300 text-sm">List of the Top 10 Growth Marketing Agencies</p>
-        </div>
+    <div class="flex justify-end">
+        <a href="#" class="text-lg">View all posts</a>
     </div>
-
-    <div class="text-center mt-12">
-        <a href="#" class="text-blue-400 underline text-lg">View all posts</a>
-    </div>
-</div>
+</section>
