@@ -1,54 +1,30 @@
-<section class="grid grid-cols-2 h-screen">
-    <!-- Content Section -->
-    <div class=" flex flex-col gap-10 justify-center items-center bg-black text-white">
-		<h2 class="text-3xl font-bold">Launch Your Growth Journey Now</h2>
-		<h2 class="">Become a Ninja Promo partner and leap-frog your competition. But first, let’s:</h2>
-		<ul class="list-inside list-disc space-y-4">
-			<li>Take a deep dive into your business and objectives.</li>
-			<li>Establish tailored strategies that propel you towards your goals.</li>
-			<li>Outline expectations, deliverables, and budgets.</li>
-		</ul>
-		<div class="text-2xl font-bold">You’re in great hands</div>
-		<div class="flex gap-4">
-		<!-- Replace with actual SVG or image paths -->
-		<img src="path-to-fantom-logo.svg" alt="Fantom logo" class="h-8">
-		<img src="path-to-iqoniq-logo.svg" alt="IQONIQ logo" class="h-8">
-		<img src="path-to-polakdot-logo.svg" alt="Polkadot logo" class="h-8">
-		<img src="path-to-ironfx-logo.svg" alt="IronFX logo" class="h-8">
-		</div>
-    </div>
+---
+// IMPORT ASTRO LAYOUTS
+import Container from "../../layouts/Container.astro"
 
-    <!-- Form Section -->
-    <div class="bg-gray-100 p-10">
-		<h2 class="text-3xl font-bold mb-6">Tell us about you.</h2>
-		<form>
-		<div class="mb-4">
-			<input class="w-full p-2 border-b-2 border-gray-300 focus:outline-none" type="text" placeholder="First Name*" required>
-		</div>
-		<div class="mb-4">
-			<input class="w-full p-2 border-b-2 border-gray-300 focus:outline-none" type="text" placeholder="Last Name (Optional)">
-		</div>
-		<div class="mb-4">
-			<input class="w-full p-2 border-b-2 border-gray-300 focus:outline-none" type="email" placeholder="Email*" required>
-		</div>
-		<div class="mb-4">
-			<input class="w-full p-2 border-b-2 border-gray-300 focus:outline-none" type="url" placeholder="Website URL (Optional)">
-		</div>
-		<div class="mb-4">
-			<select class="w-full p-2 border-b-2 border-gray-300 focus:outline-none" required>
-			<option disabled selected>What is your Budget?*</option>
-			<!-- Budget options go here -->
-			</select>
-		</div>
-		<div class="mb-8">
-			<textarea class="w-full p-2 border-b-2 border-gray-300 focus:outline-none" placeholder="Your Message (Optional)" rows="4"></textarea>
-		</div>
-		<div class="mb-4">
-			<button type="submit" class="w-full bg-purple-700 text-white p-3">Submit</button>
-		</div>
-		<div class="text-sm">
-			By clicking next, you agree to receive communications from NinjaPromo in accordance with our Privacy Policy.
-		</div>
-		</form>
-    </div>
+// IMPORT JSX COMPONENTS
+import ContactForm from "../common/ContactForm"
+---
+<section class="bg-ninjapromo_dark_slate">
+	<Container>
+		<section class="grid grid-cols-2 gap-10 h-screen">
+			<div class=" flex flex-col gap-10 justify-center text-white">
+				<h2 class="text-3xl font-bold">Launch Your Growth Journey Now</h2>
+				<h2 class="">Become a Ninja Promo partner and leap-frog your competition. But first, let’s:</h2>
+				<ul class="list-inside list-disc space-y-4">
+					<li>Take a deep dive into your business and objectives.</li>
+					<li>Establish tailored strategies that propel you towards your goals.</li>
+					<li>Outline expectations, deliverables, and budgets.</li>
+				</ul>
+				<div class="text-2xl font-bold">You’re in great hands</div>
+				<div class="flex gap-4">
+					<img src="path-to-fantom-logo.svg" alt="Fantom logo" class="h-8">
+					<img src="path-to-iqoniq-logo.svg" alt="IQONIQ logo" class="h-8">
+					<img src="path-to-polakdot-logo.svg" alt="Polkadot logo" class="h-8">
+					<img src="path-to-ironfx-logo.svg" alt="IronFX logo" class="h-8">
+				</div>
+			</div>
+			<ContactForm client:load />
+		</section>
+	</Container>
 </section>

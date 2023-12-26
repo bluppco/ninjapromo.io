@@ -1,59 +1,85 @@
 ---
+// IMPORT ASTRO COMPONENTS
+import Container from "../../layouts/Container.astro"
+
+// IMPORT ASTRO ATOMS
 import Button from "../../atoms/Button.astro"
 ---
 <!-- HARDCODED FOR NOW BUT THIS WILL COME VIA API -->
-<section class="h-screen w-full bg-cover bg-[url('/hero-bg-front.jpeg')]">
-    <section class="text-white text-center p-28 max-w-6xl mx-auto space-y-20">
-        <h1 class="text-6xl font-medium mb-4 leading-tight">
-			Your Full Service Digital Marketing Company For
-			<span class="bg-blue-700 py-1 px-3">Crypto</span>
-        </h1>
-        <p class="text-xl">A leading digital marketing agency dedicated to elevating your brand through multi-channel marketing solutions, branding and creative design.</p>
-        <div class="space-x-4 mb-10 flex items-center justify-center">
-			<Button>Request A Free Proposal</Button>
-			<a href="#">
-				<button class="bg-transparent hover:bg-blue-600 text-white text-xl font-medium py-3 px-6 transition duration-300">
-					Meet NinjaPromo
-				</button>
-			</a>
-        </div>
-        <div class="grid grid-cols-4">
-			<a href="#">
-				<div class="w-32 aspect-video">
-					<img
-						src="logo/logo-1.png"
-						alt=""
-						class="w-full h-full"
-					/>
-				</div>
-			</a>
-			<a href="#">
-				<div class="w-32 aspect-video">
-					<img
-						src="logo/logo-2.png"
-						alt=""
-						class="w-full h-full"
-					/>
-				</div>
-			</a>
-			<a href="#">
-				<div class="w-32 aspect-video">
-					<img
-						src="logo/logo-3.png"
-						alt=""
-						class="w-full h-full"
-					/>
-				</div>
-			</a>
-			<a href="#">
-				<div class="w-32 aspect-video">
-					<img
-						src="logo/logo-4.png"
-						alt=""
-						class="w-full h-full"
-					/>
-				</div>
-			</a>
-        </div>
-    </section>
+<section class="h-full w-full bg-cover bg-[url('/hero-bg-front.jpeg')]">
+	<Container>
+		<section class="text-white px-10 pt-40 space-y-10">
+			<h1 class="text-center text-6xl font-medium mb-4 leading-tight">
+				Your Full Service Digital Marketing Company
+				<br/>
+				For
+				<span class="bg-ninjapromo_blue py-1 px-3">Crypto</span>
+			</h1>
+			<p class="text-xl text-center">A leading digital marketing agency dedicated to elevating your brand through multi-channel marketing solutions, branding and creative design.</p>
+			<div class="space-x-4 mb-10 flex items-center justify-center">
+				<Button>Request A Free Proposal</Button>
+				<a href="#">
+					<div class="flex items-center group">
+						<button class="bg-transparent text-white text-xl font-medium py-3 px-6">
+							Meet NinjaPromo
+						</button>
+						<div class="bg-white group-hover:bg-ninjapromo_blue rounded-full p-2">
+							<div class="group-hover:hidden w-4 aspect-square">
+								<img
+									src="/icons/blue_right_arrow.svg"
+									alt=""
+									class="w-4 aspect-square"
+								/>
+							</div>
+							<div class="hidden group-hover:block w-4 aspect-square">
+								<img
+									src="/icons/white_right_arrow.svg"
+									alt=""
+									class="w-4 aspect-square"
+								/>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="grid grid-cols-4">
+				<a href="#">
+					<div class="w-32 aspect-video">
+						<img
+							src="logo/logo-1.png"
+							alt=""
+							class="w-full h-full"
+						/>
+					</div>
+				</a>
+				<a href="#">
+					<div class="w-32 aspect-video">
+						<img
+							src="logo/logo-2.png"
+							alt=""
+							class="w-full h-full"
+						/>
+					</div>
+				</a>
+				<a href="#">
+					<div class="w-32 aspect-video">
+						<img
+							src="logo/logo-3.png"
+							alt=""
+							class="w-full h-full"
+						/>
+					</div>
+				</a>
+				<a href="#">
+					<div class="w-32 aspect-video">
+						<img
+							src="logo/logo-4.png"
+							alt=""
+							class="w-full h-full"
+						/>
+					</div>
+				</a>
+			</div>
+		</section>
+	</Container>
 </section>

@@ -29,14 +29,16 @@ import TellUsAboutYou from "../components/home/TellUsAboutYou.astro"
 import Header from "../components/common/Header"
 ---
 <Layout title="Digital Marketing Agency | NinjaPromo">
-	<section class="relative">
+	<section class="relative h-screen max-h-screen">
 		<HeaderBanner />
 		<Header client:load />
 		<Masthead />
 	</section>
 	<Services services={ Array(17).fill("") } />
 	<Partner />
-	<Industries services={ Array(12).fill("") } />
+	<Container>
+		<Industries services={ Array(12).fill("") } />
+	</Container>
 	<PeopleAreSaying />
 	<Container>
 		<Clients clients={ Array(18).fill("") } />
