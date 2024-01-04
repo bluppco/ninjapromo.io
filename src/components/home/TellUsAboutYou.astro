@@ -1,0 +1,30 @@
+---
+// IMPORT ASTRO LAYOUTS
+import Container from "../../layouts/Container.astro"
+
+// IMPORT JSX COMPONENTS
+import ContactForm from "../common/ContactForm"
+---
+<section class="bg-ninjapromo_dark_slate">
+	<Container>
+		<section class="grid grid-cols-2 gap-10 h-screen">
+			<div class=" flex flex-col gap-10 justify-center text-white">
+				<h2 class="text-3xl font-bold">Launch Your Growth Journey Now</h2>
+				<h2 class="">Become a Ninja Promo partner and leap-frog your competition. But first, let’s:</h2>
+				<ul class="list-inside list-disc space-y-4">
+					<li>Take a deep dive into your business and objectives.</li>
+					<li>Establish tailored strategies that propel you towards your goals.</li>
+					<li>Outline expectations, deliverables, and budgets.</li>
+				</ul>
+				<div class="text-2xl font-bold">You’re in great hands</div>
+				<div class="flex gap-4">
+					<img src="path-to-fantom-logo.svg" alt="Fantom logo" class="h-8">
+					<img src="path-to-iqoniq-logo.svg" alt="IQONIQ logo" class="h-8">
+					<img src="path-to-polakdot-logo.svg" alt="Polkadot logo" class="h-8">
+					<img src="path-to-ironfx-logo.svg" alt="IronFX logo" class="h-8">
+				</div>
+			</div>
+			<ContactForm client:load />
+		</section>
+	</Container>
+</section>

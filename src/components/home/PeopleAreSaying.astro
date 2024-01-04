@@ -1,0 +1,85 @@
+---
+// IMPORT LAYOUTS
+import Container from "../../layouts/Container.astro"
+
+// IMPORT ATOMS
+import H2 from "../../atoms/H2.astro"
+import H3 from "../../atoms/H3.astro"
+import Button from "../../atoms/Button.astro"
+
+// IMPORT COMPONENTS
+import Testimonial from "./Testimonial.astro"
+---
+<section class="bg-ninjapromo_dark_slate text-white py-20">
+    <Container>
+        <section class="space-y-20">
+            <H2>What People Are Saying</H2>
+            <div class="grid grid-cols-3 gap-16 pt-8">
+                <Testimonial
+                    title="Digital Marketing for Private Investment Firm"
+                    description="In a competitive market like crypto, there is a bunch of highly skilled professionals, but not all of them have amazing people skills and work ethic. Working with the Ninjas is a pleasure because they really adapt to the work dynamic of the client. Always ready for discussion and looking for the best solutions for the project even when the going gets rough. The way how they helped us meet some of the demanding deadlines was truly impressive."
+                    author_name="Jacob Kappus"
+                    author_designation="CMO Ultron Foundation"
+                    src=""
+                    alt=""
+                    logo_src=""
+                    logo_alt=""
+                />
+                <Testimonial
+                    title="Digital Marketing for Private Investment Firm"
+                    description="In a competitive market like crypto, there is a bunch of highly skilled professionals, but not all of them have amazing people skills and work ethic. Working with the Ninjas is a pleasure because they really adapt to the work dynamic of the client. Always ready for discussion and looking for the best solutions for the project even when the going gets rough. The way how they helped us meet some of the demanding deadlines was truly impressive."
+                    author_name="Jacob Kappus"
+                    author_designation="CMO Ultron Foundation"
+                    src=""
+                    alt=""
+                    logo_src=""
+                    logo_alt=""
+                />
+                <Testimonial
+                    title="Digital Marketing for Private Investment Firm"
+                    description="In a competitive market like crypto, there is a bunch of highly skilled professionals, but not all of them have amazing people skills and work ethic. Working with the Ninjas is a pleasure because they really adapt to the work dynamic of the client. Always ready for discussion and looking for the best solutions for the project even when the going gets rough. The way how they helped us meet some of the demanding deadlines was truly impressive."
+                    author_name="Jacob Kappus"
+                    author_designation="CMO Ultron Foundation"
+                    src=""
+                    alt=""
+                    logo_src=""
+                    logo_alt=""
+                />
+            </div>
+            <div class="flex items-center justify-between">
+                <Button>See Case Studies</Button>
+                <div class="flex justify-center">
+                    <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-l">
+                        &lt;
+                    </button>
+                    <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-r">
+                        &gt;
+                    </button>
+                </div>
+            </div>
+            <H3>Our Partners are Backed by the Best in Venture</H3>
+            <div class="flex justify-center gap-10">
+                <div>
+                    <img src="path-to-polygon-logo.svg" alt="Polygon logo" class="h-6">
+                </div>
+                <div>
+                    <img src="path-to-techstars-logo.svg" alt="Techstars logo" class="h-6">
+                </div>
+                <div>
+                    <img src="path-to-105-ventures-logo.svg" alt="105 Ventures logo" class="h-6">
+                </div>
+                <div>
+                    <img src="path-to-signum-capital-logo.svg" alt="Signum Capital logo" class="h-6">
+                </div>
+                <div>
+                    <img src="path-to-ycombinator-logo.svg" alt="Y Combinator logo" class="h-6">
+                </div>
+            </div>
+            <section class="flex flex-col gap-8 items-center bg-partner bg-no-repeat bg-center pt-40">
+                <h2 class="text-white font-dm_sans text-5xl font-medium text-center">Partner With a Digital Marketing Agency That Delivers Growth</h2>
+                <p class="text-center text-white font-dm_sans">We’re a full-service digital marketing agency that helps brands that want to get noticed and dominate their industry. We love marketing. We eat, sleep and breathe it. But more importantly, we love seeing our clients grow their businesses with our help. There’s nothing more satisfying than playing a pivotal role in the success of another business. Whether you’re a fresh-faced startup or a seasoned enterprise, we want to be the one that helps you chart a course to explosive growth. If this sounds good to you, then let’s talk.</p>
+                <Button>Speak to our team</Button>
+            </section>
+        </section>
+    </Container>
+</section>
