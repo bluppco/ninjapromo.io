@@ -82,7 +82,7 @@ const Header = () => {
 								<a>Contact</a>
 							</li>
 						</ul>
-						<button className={` ${ isScrolled ? "bg-ninjapromo_blue border-ninjapromo_blue" : "bg-transparent border-white" } border-2 text-white font-bold py-2 px-8`}>Book Intro Call</button>
+						<button className={` ${ isScrolled ? "bg-ninjapromo_blue border-ninjapromo_blue" : "bg-transparent border-white" } border-2 text-white font-base py-2 px-8`}>Book Intro Call</button>
 					</nav>
 				</ContainerJSX>
 			</motion.header>

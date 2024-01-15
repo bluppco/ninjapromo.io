@@ -4,8 +4,14 @@ import Container from "../../layouts/Container.astro"
 
 // IMPORT ASTRO ATOMS
 import Button from "../../atoms/Button.astro"
+const hero_images = Array(4).fill({
+
+	source: "logo/logo-4.png",
+	alt: "image alt text",
+	link: "/about"
+
+})
 ---
-<!-- HARDCODED FOR NOW BUT THIS WILL COME VIA API -->
 <section class="h-full w-full bg-cover bg-[url('/hero-bg-front.jpeg')]">
 	<Container>
 		<section class="text-white px-10 pt-40 space-y-10">
@@ -17,7 +23,9 @@ import Button from "../../atoms/Button.astro"
 			</h1>
 			<p class="text-xl text-center">A leading digital marketing agency dedicated to elevating your brand through multi-channel marketing solutions, branding and creative design.</p>
 			<div class="space-x-4 mb-10 flex items-center justify-center">
-				<Button>Request A Free Proposal</Button>
+				<Button>
+					<p class="z-20">Request A Free Proposal</p>
+				</Button>
 				<a href="#">
 					<div class="flex items-center group">
 						<button class="bg-transparent text-white text-xl font-medium py-3 px-6">
@@ -42,43 +50,26 @@ import Button from "../../atoms/Button.astro"
 					</div>
 				</a>
 			</div>
-			<div class="grid grid-cols-4">
-				<a href="#">
-					<div class="w-32 aspect-video">
-						<img
-							src="logo/logo-1.png"
-							alt=""
-							class="w-full h-full"
-						/>
-					</div>
-				</a>
-				<a href="#">
-					<div class="w-32 aspect-video">
-						<img
-							src="logo/logo-2.png"
-							alt=""
-							class="w-full h-full"
-						/>
-					</div>
-				</a>
-				<a href="#">
-					<div class="w-32 aspect-video">
-						<img
-							src="logo/logo-3.png"
-							alt=""
-							class="w-full h-full"
-						/>
-					</div>
-				</a>
-				<a href="#">
-					<div class="w-32 aspect-video">
-						<img
-							src="logo/logo-4.png"
-							alt=""
-							class="w-full h-full"
-						/>
-					</div>
-				</a>
+			<div class="grid grid-cols-4 justify-center items-center">
+				{
+
+					hero_images.map( ( data ) => {
+
+						return (
+							<a href={ data.link }>
+								<div class="w-full flex justify-center">
+									<img
+										src={ data.source }
+										alt={ data.alt }
+										class="h-12 object-fill"
+									/>
+								</div>
+							</a>
+						)
+
+					})
+
+				}
 			</div>
 		</section>
 	</Container>

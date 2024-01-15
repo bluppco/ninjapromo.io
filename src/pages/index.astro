@@ -19,7 +19,7 @@ import Footer from "../components/common/Footer.astro"
 import HeaderBanner from "../components/common/HeaderBanner.astro"
 import Industries from "../components/home/Industries.astro"
 import LatestPosts from "../components/home/LatestPosts.astro"
-import Masthead from "../components/home/Masthead.astro"
+import Hero from "../components/home/Hero.astro"
 import Partner from "../components/home/Partner.astro"
 import PeopleAreSaying from "../components/home/PeopleAreSaying.astro"
 import Services from "../components/home/Services.astro"
@@ -32,13 +32,11 @@ import Header from "../components/common/Header"
 	<section class="relative h-screen max-h-screen">
 		<HeaderBanner />
 		<Header client:load />
-		<Masthead />
+		<Hero />
 	</section>
 	<Services services={ Array(17).fill("") } />
 	<Partner />
-	<Container>
-		<Industries services={ Array(12).fill("") } />
-	</Container>
+	<Industries services={ Array(12).fill("") } />
 	<PeopleAreSaying />
 	<Container>
 		<Clients clients={ Array(18).fill("") } />
